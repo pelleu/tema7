@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>struktur</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        h1,
+        footer {
+            text-align: center;
+        }
+
+        header,
+        footer {
+            padding: 10px 0;
+            border: 1px solid #888;
+        }
+
+    </style>
+</head>
+<header>
+    <h1>Titel</h1>
+</header>
+<main>
+    <section>
+        <h2>Undertitel</h2>
+        <img src="https://placeimg.com/640/480/any" alt="billede1" class="first">
+        <article>
+            <h3>Article 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem obcaecati, eaque ullam quia veritatis voluptate, unde alias, asperiores sunt at earum odio necessitatibus doloremque vel repellendus ipsa. Dicta, corporis recusandae?</p>
+        </article>
+
+        <img src="https://placeimg.com/640/480/nature" alt="billede1">
+        <article>
+            <h3>Article 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem obcaecati, eaque ullam quia veritatis voluptate, unde alias, asperiores sunt at earum odio necessitatibus doloremque vel repellendus ipsa. Dicta, corporis recusandae?</p>
+        </article>
+
+    </section>
+</main>
+<footer>
+    <p>This is the footer</p>
+</footer>
+
+
+<body>
+    <script>
+        const overskrift = document.querySelector("h1");
+        overskrift.textContent;
+        console.log(overskrift.textContent);
+
+        const underoverskrift = document.querySelector("h2");
+        underoverskrift.textContent;
+        console.log(underoverskrift.textContent);
+
+        const artikeloverskrift = document.querySelector("h3");
+        artikeloverskrift.textContent;
+        console.log(artikeloverskrift.textContent);
+
+        const article2 = document.querySelector("article");
+        console.log(article2);
+
+        const pic = document.querySelector("article:nth-child(2) img");
+        const article2text = document.querySelector("article:nth-child(2) p");
+        pic.alt = "TEKSTHAHA";
+
+    </script>
+</body>
+
+</html>
